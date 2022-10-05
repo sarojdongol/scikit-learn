@@ -14,7 +14,7 @@ if __name__ == '__main__':
     
     classifier = ensemble.RandomForestClassifier(n_jobs=-1)
     param_grid = {
-        "n_estimators": np.arange(100, 1500, 300),
+        "n_estimators": np.arange(100, 1500),
         "max_depth": np.arange(1, 20),
         "criterion": ["gini", "entropy"]
     }
